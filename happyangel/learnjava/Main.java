@@ -3,9 +3,15 @@ package happyangel.learnjava;
 import javafx.util.Pair;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -17,35 +23,18 @@ public class Main {
     private static AtomicBoolean quit = new AtomicBoolean(false);
 
     public static void main(String[] args) {
-        System.out.println("calEstimateAskeeImgCount is " + calEstimateAskeeImgCount(387));
+        Test tt1 = Test.A;
+        Test tt2 = Test.A;
 
-        int a = 1;
+
+        System.out.println(tt1 == Test.B);
+
+
 
     }
 
-    private static String calEstimateAskeeImgCount(long imgCount)
-    {
-        if (imgCount > 0 && imgCount < 10) {
-            return "N+";
-        } else if (imgCount >= 10) {
-            int nCount = 0;
-            long tmpImgCount = imgCount;
-            long firstEffectiveNum = 0;
-            while (tmpImgCount != 0) {
-                nCount++;
-                firstEffectiveNum = tmpImgCount;
-                tmpImgCount = tmpImgCount / 10;
-            }
-
-            String result = String.valueOf(firstEffectiveNum);
-            while(nCount > 1) {
-                result += "0";
-                nCount--;
-            }
-            result += "+";
-            return result;
-        } else {
-            return "";
-        }
+    enum Test {
+        A,
+        B,
     }
 }
