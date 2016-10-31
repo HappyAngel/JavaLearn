@@ -58,7 +58,7 @@ public class PetersonLockAlgorithm {
 
 class PetersonLock implements Lock {
     private volatile Map<Long, Boolean> flag = new HashMap<>(); // if i'm interested
-    private volatile long victim;
+    private volatile long victim; // you go first
     private final long threadIndex1;
     private final long threadIndex2;
 
