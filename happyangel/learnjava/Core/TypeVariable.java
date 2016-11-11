@@ -11,7 +11,7 @@ public class TypeVariable {
         t.mCPublic();
         t.mCProtected();
         t.mCPackage();
-        t.mCPrivate(); // compile-error
+        //t.mCPrivate(); // compile-error
     }
 
 
