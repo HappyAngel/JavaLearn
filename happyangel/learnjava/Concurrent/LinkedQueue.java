@@ -19,7 +19,7 @@ public class LinkedQueue<T> {
     int tail, head, count;
 
     public LinkedQueue(int capacity) {
-        items = (T[])new Object(100);
+        items = (T[])new Object[capacity];
     }
 
     public void enq(T x) {
