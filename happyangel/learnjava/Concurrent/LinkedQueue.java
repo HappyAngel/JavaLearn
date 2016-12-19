@@ -60,5 +60,6 @@ public class LinkedQueue<T> {
         } finally {
             lock.unlock();
         }
+        return null;
     }
 }
