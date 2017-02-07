@@ -67,6 +67,7 @@ public class TimingThreadPool extends ThreadPoolExecutor{
             service.submit(() -> {
                 System.out.println("Task 3 executing");
             });
+
         } finally {
             service.shutdown();
         }
