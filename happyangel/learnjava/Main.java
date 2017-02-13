@@ -2,6 +2,8 @@ package happyangel.learnjava;
 
 import happyangel.learnjava.Concurrent.OneShotLatch;
 
+import java.util.concurrent.ConcurrentLinkedDeque;
+import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -25,7 +27,7 @@ public class Main {
 
             System.out.println("Thread 2 finished...");
         });
-
+        ConcurrentLinkedQueue
         t1.start();
         t2.start();
 
